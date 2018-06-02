@@ -4,15 +4,17 @@
         font-size: 14px;
         font-size: 14px;
     }
-
+    #medium {
+        display: none;
+    }
     .current,
     .highlow,
     .conditions {
         margin-top: 40px;
         align-content: center;
     }
-    .article-pic {
-        max-width: 600px;
+    main article img {
+        max-width: 50%;
         display: inline;
     }
 
@@ -30,4 +32,12 @@
         border-collapse: collapse;
 
     }
+    #small {
+        display: none;
+    }
+
+    #large {
+        display: block;
+    }
+
 }

@@ -1,4 +1,4 @@
-*{
+* {
     text-align: center;
 }
 
@@ -74,8 +74,19 @@ main {}
 }
 
 main figure {
-    margin: 0 0 .2rem 2%;
+    padding-bottom: 10px;
+    padding-top: 10px;
     width: 100%;
+    margin: 0 0 0 0%;
+}
+
+main figure img {
+    width: 100%;
+}
+
+main figure figcaption {
+    text-align: center;
+    font-size: .75rem;
 }
 
 main article {
@@ -84,7 +95,7 @@ main article {
 }
 
 main article img {
-    width: 95%;
+    width: 100%;
     height: auto;
 }
 
@@ -94,6 +105,16 @@ footer {
     padding-bottom: 15px;
 }
 
+#large {
+    display: none;
+}
+
+#medium {
+    display: none;
+}
+#small {
+    display: block;
+}
 /*Class selectors*/
 
 .forecast {

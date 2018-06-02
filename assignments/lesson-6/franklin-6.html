@@ -33,7 +33,11 @@
     <main>
         <h2>Weather Wherever</h2>
         <img src="images/sunny.jpg" alt="sunny-day" class="under-nav">
-        <figure>
+        <figure class="src-set">
+            <img src="images/large.jpg" alt="src-set" srcset="images/large.jpg 1024w, images/medium.jpg 640w, images/small.jpg 320w">
+            <figcaption id="large">Large</figcaption>
+            <figcaption id="medium">Medium</figcaption>
+            <figcaption id="small">Small</figcaption>
         </figure>
         <section class="weather-summary">
             <h3>Weather Summary</h3>
@@ -104,10 +108,12 @@
             <br>Franklin, US 99999
             <br>Google Map
         </section>
-        <section class="footer-bar">&copy;2018 | All Rights Reserved | Weather Wherever | <span id="currentdate">
-      Current Date Placeholder</span>
+        <section class="footer-bar">&copy;2018 | All Rights Reserved | Weather Wherever |
+            <span id="c"> 
+            </span>
         </section>
     </footer>
+    <script src="js/currentdate.js"></script>
 
 </body>
 
