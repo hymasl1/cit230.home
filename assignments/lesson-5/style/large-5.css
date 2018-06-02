@@ -1,0 +1,33 @@
+@media only screen and (min-width: 1024px) {
+    body {
+        max-width: 60%;
+        font-size: 14px;
+    }
+}
+
+.current,
+.highlow,
+.conditions {
+    margin-top: 40px;
+    align-content: center;
+}
+
+.article-pic {
+    max-width: 600px;
+    display: inline;
+}
+
+.article {
+    display: inline;
+    max-width: 100%;
+}
+
+table,
+th,
+td {
+    text-align: center;
+    align-content: center;
+    border: 1px solid #666;
+    border-collapse: collapse;
+
+}

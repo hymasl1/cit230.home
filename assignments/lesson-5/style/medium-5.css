@@ -1,0 +1,67 @@
+@media only screen and (min-width: 37.5em) {
+    body {
+        width: 95%;
+        display: inline-block;
+        font-size: 18px;
+    }
+    .under-nav{
+        width: 100%;
+    }
+    picture {
+        box-shadow: 3px 3px 3px #bbb;
+        margin-bottom: 5px;
+    }
+    nav button {
+        display: none;
+    }
+    /* hamburger button does not need to be shown in the medium on up views */
+    section.forecast {
+        display: block;
+    }
+    nav ul li {
+        height: 50px;
+        display: inline-block;
+    }
+    #article-title {
+        display: inline-block;
+        font-size: 30px;
+        text-decoration: overline underline;
+    }
+    .weather-summary{
+        display: inline-block;
+        border: 3px solid black
+    }
+    .article {}
+    main article img {
+        width: 500px;
+        float: right;
+        margin: 7px;
+        box-shadow: 3px 3px 3px #bbb;
+    }
+    main article p {
+        font-size: 18px;
+    }
+    picture {
+        width: 60%;
+        float: left;
+    }
+    table,
+    th,
+    td {
+        text-align: center;
+        align-content: center;
+        border: 1px solid #666;
+        border-collapse: collapse;
+    }
+    table {
+        border-top: 10px solid #666;
+        width: 100%;
+        display: inline-table
+    }
+    footer {
+        border-top: 5px solid #666;
+        width: 100%;
+        display: inline-block;
+        border-bottom: 5px solid #666;
+
+    }
