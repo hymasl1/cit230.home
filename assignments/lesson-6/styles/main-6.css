@@ -29,11 +29,17 @@ header {
     font-size: 4em;
 }
 
-nav {
-    background: #bdb;
+nav button {
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+    color: #SSS;
 }
 
-nav button {}
+nav {
+    background: #bdb;
+    display: block;
+}
 
 nav ul {
     list-style-type: none;
@@ -42,8 +48,10 @@ nav ul {
     overflow: hidden;
 }
 
+
 nav ul li {
-    background-color: #bdb;
+
+    /*    background-color: #bdb;*/
 }
 
 nav ul li a {
@@ -60,6 +68,10 @@ nav ul li.active a {}
 nav ul li a:hover:not(.active) {
     background-color: lightgreen;
     color: white;
+}
+
+nav ul.hide {
+    display: none;
 }
 
 main {}
@@ -105,6 +117,10 @@ footer {
     padding-bottom: 15px;
 }
 
+@media only screen and (max-width: 37.5em) {
+    #primaryNav.hide {}
+}
+
 #large {
     display: none;
 }
@@ -112,9 +128,11 @@ footer {
 #medium {
     display: none;
 }
+
 #small {
     display: block;
 }
+
 /*Class selectors*/
 
 .forecast {

@@ -1,4 +1,3 @@
-function currentDate() {
     var d = new Date();
     var day = d.getDay();
     var month = d.getMonth();
@@ -31,5 +30,8 @@ function currentDate() {
 
     var n = weekday[day] + " " + dom + ", " + monthday[month] + " " + year;
 
-    document.getElementById("c").innerHTML = n;
-}
+    document.getElementById("currentDate").innerHTML = n;
+
+    function toggleHam() {
+        document.getElementById("primaryNav").classList.toggle("hide");
+    }
