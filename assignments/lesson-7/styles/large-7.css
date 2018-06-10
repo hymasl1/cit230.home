@@ -1,0 +1,57 @@
+@media only screen and (min-width: 1024px) {
+
+    nav ul.hide {
+        display: block;
+    }
+    .under-nav {
+        width: 100%;
+    }
+    nav button {
+        display: none;
+    }
+    nav ul li {
+        text-align: center;
+        display: inline-flex;
+    }
+    body {
+        max-width: 1030px;
+        font-size: 14px;
+        font-size: 14px;
+    }
+    #medium {
+        display: none;
+    }
+    .current,
+    .highlow,
+    .conditions {
+        margin-top: 40px;
+        align-content: center;
+    }
+    main article img {
+        max-width: 50%;
+        display: inline;
+    }
+
+    .article {
+        display: inline;
+        max-width: 100%;
+    }
+
+    table,
+    th,
+    td {
+        text-align: center;
+        align-content: center;
+        border: 1px solid #666;
+        border-collapse: collapse;
+
+    }
+    #small {
+        display: none;
+    }
+
+    #large {
+        display: block;
+    }
+
+}
