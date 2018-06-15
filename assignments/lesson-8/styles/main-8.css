@@ -1,0 +1,144 @@
+* {
+    text-align: center;
+}
+
+header {
+    display: flex;
+    font-size: 65px;
+    justify-content: center;
+    align-content: center;
+}
+
+header img {
+    display: none;
+}
+
+body {
+    display: inline-flex;
+    flex-flow: column;
+    padding: 10px;
+    align-items: center;
+    font-family: sans-serif;
+    background-color: beige;
+}
+
+section img {
+    width: 100%;
+}
+
+picture {
+    box-shadow: #666;
+}
+
+header,
+nav,
+main,
+footer {
+    max-width: 100%;
+}
+
+
+nav button {
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+    color: #SSS;
+}
+nav button:hover:not(.active) {
+    background-color: lightgreen;
+    color: white;
+    justify-content: center;
+}
+nav {
+    display: flex;
+    flex-flow: column;
+    background: #bdb;
+    width: 100%;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+
+nav ul li a {
+    display: inline-flex;
+    color: black;
+    text-align: center;
+    padding: 14px 38px;
+    text-decoration: none;
+    font-size: .9em;
+}
+
+nav ul li.active a {}
+
+nav ul li a:hover:not(.active) {
+    background-color: lightgreen;
+    color: white;
+    justify-content: center;
+    width: 96%;
+}
+
+nav ul.hide {
+    display: none;
+}
+
+.under-nav {
+    max-width: inherit;
+}
+
+.current {
+    text-decoration-line: underline;
+    font-size: 20px;
+}
+
+main figure {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    width: 100%;
+    margin: 0 0 0 0%;
+}
+
+main figure img {
+    width: 100%;
+}
+
+main figure figcaption {
+    text-align: center;
+    font-size: .75rem;
+}
+
+main article {
+    padding: .25rem;
+    text-align: center;
+}
+
+main article img {
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    padding: 5px;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+#windchill {
+    font-size: 14px;
+    text-align: center;
+    color: blue;
+}
+
+@media only screen and (max-width: 37.5em) {
+    #primaryNav.hide {}
+}
+
+/*Class selectors*/
+
+.forecast {
+    display: none;
+}
