@@ -51,7 +51,7 @@ nav button:hover:not(.active) {
     justify-content: center;
 }
 
-nav {
+nav { 
     display: flex;
     flex-flow: column;
     background: #bdb;
