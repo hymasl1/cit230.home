@@ -4,7 +4,7 @@
 
 header {
     display: flex;
-    font-size: 65px;
+    font-size: 30px;
     justify-content: center;
     align-content: center;
 }
@@ -37,12 +37,10 @@ footer {
     max-width: 100%;
 }
 
-
 nav button {
     border: none;
     background-color: transparent;
     font-size: 20px;
-    color: #SSS;
 }
 nav button:hover:not(.active) {
     background-color: lightgreen;
@@ -141,4 +139,9 @@ footer {
 
 .forecast {
     display: none;
+}
+.gallery {
+    list-style: none;
+    display: grid;
+    grid-gap: 0.5em;
 }

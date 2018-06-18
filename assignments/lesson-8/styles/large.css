@@ -14,9 +14,12 @@
         display: inline-flex;
     }
     body {
+        display: flex;
+        margin: auto;
         max-width: 1030px;
         font-size: 14px;
         font-size: 14px;
+        text-align: center;
     }
     #medium {
         display: none;
@@ -53,5 +56,13 @@
     #large {
         display: block;
     }
-
+/*Class selectors*/
+    
+    .gallery {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .gallery li:hover:not(.active) {
+        box-shadow: 5px 5px 5px 5px grey;
+    }
+    
 }

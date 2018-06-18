@@ -2,13 +2,12 @@
 
     body {
         padding: 15px;
-        font-size: 18px;
     }
     picture {
         box-shadow: 3px 3px 3px #bbb;
         margin-bottom: 5px;
     }
-    
+
     header {
         display: flex;
         justify-content: center;
@@ -23,29 +22,34 @@
 
     section.forecast {
         display: inline-flex;
-        flex-flow:column;
+        flex-flow: column;
         width: 96%;
+        font-size: 20px;
+        margin-bottom: 35px;
     }
 
     #article-title {
         display: inline-flex;
-        font-size: 30px;
+        font-size: 40px;
         text-decoration: overline underline;
     }
 
 
     .weather-summary {
+        margin-top: 35px;
         flex-flow: column wrap;
         border: 3px solid black;
+        background: #bdb;
+        font-size: 20px;
     }
     .summary-content {
         align-content: flex-end;
     }
-    
+
     #summary-title {
         width: 100%;
     }
-    
+
     main article img {
         width: 50%;
         float: right;
@@ -54,7 +58,7 @@
     }
 
     main article p {
-        font-size: 18px;
+        font-size: 20px;
     }
 
     picture {
@@ -83,7 +87,13 @@
         width: 100%;
         display: inline-block;
         border-bottom: 5px solid #666;
-
+        font-size: 20px;
+    }
+    
+    /*Class Selectors*/
+    .gallery {
+        grid-template-columns: 1fr 1fr;
     }
 
+    
 }

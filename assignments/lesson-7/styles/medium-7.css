@@ -85,5 +85,9 @@
         border-bottom: 5px solid #666;
 
     }
+/*Class Selectors*/
+    .gallery{
+            grid-template-columns: 1fr 1fr;
+    }
 
 }
