@@ -1,4 +1,4 @@
-@media only screen and (min-width: 1060px) {
+@media only screen and (min-width: 1080px) {
 
     nav ul.hide {
         display: block;
@@ -75,12 +75,12 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
-    
+
     .index-heading {
         margin-bottom: 15px;
     }
 
-    .weather-summary {
+    .index-large .weather-summary {
         display: flex;
         flex-flow: column;
         margin: 0;
@@ -88,16 +88,12 @@
         justify-content: flex-start;
     }
 
-    .left {
+    .index-large .left {
         width: 90%;
     }
 
-    .right {
+    .index-large .right {
         width: 90%;
-    }
-
-    .town-weather-heading {
-        margin-top: 30px;
     }
 
 }
