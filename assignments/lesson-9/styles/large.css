@@ -1,0 +1,99 @@
+@media only screen and (min-width: 1060px) {
+
+    nav ul.hide {
+        display: block;
+    }
+    .under-nav {
+        width: 100%;
+    }
+    nav button {
+        display: none;
+    }
+    nav ul li {
+        text-align: center;
+        display: inline-flex;
+    }
+    body {
+        display: flex;
+        margin: auto;
+        margin-bottom: 20px;
+        max-width: 1030px;
+        font-size: 14px;
+        font-size: 14px;
+        text-align: center;
+    }
+    #medium {
+        display: none;
+    }
+    .current,
+    .highlow,
+    .conditions {
+        margin-top: 40px;
+        align-content: center;
+    }
+    main article img {
+        max-width: 50%;
+        display: inline;
+    }
+
+    .article {
+        display: inline;
+        max-width: 100%;
+    }
+
+    table,
+    th,
+    td {
+        text-align: center;
+        align-content: center;
+        border: 1px solid #666;
+        border-collapse: collapse;
+
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    #small {
+        display: none;
+    }
+
+    #large {
+        display: block;
+    }
+    /*Class selectors*/
+    .gallery {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .gallery li:hover:not(.active) {
+        box-shadow: 5px 5px 5px 5px grey;
+        border-radius: 10px;
+    }
+
+    .index-large {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .weather-summary {
+        display: flex;
+        flex-flow: column;
+        margin: 0;
+        margin-left: 5px;
+        justify-content: flex-start;
+    }
+
+    .left {
+        width: 90%;
+    }
+
+    .right {
+        width: 90%;
+    }
+
+    .town-weather-heading {
+        margin-top: 30px;
+    }
+
+}

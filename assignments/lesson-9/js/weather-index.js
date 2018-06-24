@@ -9,6 +9,4 @@ weatherRequest.onload = function () {
 
     document.getElementById('currentTemp').innerHTML = weatherInfo.main.temp;
 
-    var iconcode = weatherInfo.weather[0].icon;
-
-} // end of function
+}
