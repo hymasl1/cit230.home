@@ -8,8 +8,8 @@ weatherRequest.onload = function () {
     console.log(weatherInfo);
 
     document.getElementById('currentTemp').innerHTML = weatherInfo.main.temp;
-    var high = parseFloat(document.getElementById('high').innerHTML = weatherInfo.main.temp_max);
-    var low = parseFloat(document.getElementById('low').innerHTML = weatherInfo.main.temp_min);
+    var high = parseFloat(weatherInfo.main.temp_max);
+    var low = parseFloat(weatherInfo.main.temp_min);
     var wind = parseFloat(document.getElementById('wind').innerHTML = weatherInfo.wind.speed);
 
     var avrg = (high + low) / 2;

@@ -82,10 +82,6 @@
         grid-template-columns: 1fr 1fr 1fr;
     }
 
-    #index-heading {
-        margin-bottom: 15px;
-    }
-
     .index-large .weather-summary {
         display: flex;
         flex-flow: column;

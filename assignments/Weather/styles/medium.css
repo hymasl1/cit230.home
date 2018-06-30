@@ -90,9 +90,8 @@
     .weather-summary {
         display: flex;
         flex-direction: row;
-        align-items: center;
+        align-items: flex-start;
         flex-wrap: wrap;
-        margin-top: 35px;
     }
 
     .town-heading,

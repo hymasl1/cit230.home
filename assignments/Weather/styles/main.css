@@ -102,6 +102,7 @@ nav ul.hide {
 
 .under-nav {
     max-width: inherit;
+    margin-bottom: 35px;
 }
 
 .current {
@@ -148,6 +149,9 @@ footer {
 }
 
 /*------Form Style------*/
+form{
+    font-size: 20px
+}
 
 form fieldset {
     margin: 2rem 0;
@@ -258,6 +262,9 @@ form label.top input:required:valid {
 .town-info {
     padding: 0;
     list-style: none;
+}
+.town-info li{
+    margin-bottom: 10px;
 }
 
 .description {
