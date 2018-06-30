@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Greenville - Weather Wherever</title>
+    <meta name="Description" content="Greenville's information at the tip of your fingers. Weather, events, and news!">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+</head>
+
+<body>
+
+    <header class="header">
+        <img src="images/logo.png" alt="Designed by Freepik from www.flaticon.com">
+        <h1>Weather Wherever You Are</h1>
+    </header>
+
+    <nav>
+        <button onclick="toggleHam()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="franklin.html">Franklin</a></li>
+            <li class="active"><a href="greenville.html">Greenville</a></li>
+            <li><a href="springfield.html">Springfield</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery-9.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Weather Wherever</h2>
+        <img src="images/greenville-scape.jpeg" alt="Sunny with clouds over large green field" class="under-nav">
+
+        <section class="weather-summary">
+            <h2 class="town-heading" id="city-name-g"></h2>
+            <h3 class="town-motto" id="town-motto-g"></h3>
+            <div class="left">
+                <img src="images/greenville.jpeg" alt="Hand outstretched of Greenville">
+                <h3 class="town-info-heading">Fun Facts</h3>
+                <ul class="town-info">
+                    <li>Year Founded:<span id="town-year-g"></span></li>
+                    <li>Current Population: <span id="town-pop-g">0000</span></li>
+                    <li>Average Rainfall: <span id="town-rain-g">0000</span></li>
+                </ul>
+            </div>
+            <div class="right">
+                <h3 class="town-events-heading">Events</h3>
+                <ul class="town-info">
+                    <li id="town-events-g"></li>
+                    <li id="town-events-g1"></li>
+                    <li id="town-events-g2"></li>
+                </ul>
+                <h3 class="town-weather-heading">Current Weather information</h3>
+                <img src="images/placeholder.png" alt="Current Weather" id="weather_icon">
+                <p>Current Temperature: <span id=currentTemp></span>&deg;F</p>
+                <p>High: <span id="high">88</span>&deg;F</p>
+                <p>Low: <span id="low">60</span>&deg;F</p>
+                <p>Wind Speed: <span id="wind">4</span> mph NE</p>
+                <p>Wind Chill: <span id="chill"></span>&deg;F</p>
+            </div>
+        </section>
+        <section class="forecast">
+            <h3>Ten Day Forecast</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col">Day 1</th>
+                        <th scope="col">Day 2</th>
+                        <th scope="col">Day 3</th>
+                        <th scope="col">Day 4</th>
+                        <th scope="col">Day 5</th>
+                        <th scope="col">Day 6</th>
+                        <th scope="col">Day 7</th>
+                        <th scope="col">Day 8</th>
+                        <th scope="col">Day 9</th>
+                        <th scope="col">Day 10</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>89&deg;F</td>
+                        <td>87&deg;F</td>
+                        <td>78&deg;F</td>
+                        <td>75&deg;F</td>
+                        <td>72&deg;F</td>
+                        <td>72&deg;F</td>
+                        <td>79&deg;F</td>
+                        <td>83&deg;F</td>
+                        <td>85&deg;F</td>
+                        <td>89&deg;F</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section id="article-section">
+            <article class="article">
+                <h3 id="article-title">Greenville County Fair Coming Soon</h3>
+                <img src="images/greenville-article.jpeg" alt="greenville-fair" class="article-pic">
+                <ul class="town-article"><h3>Why YOU should go to the fair!</h3>
+                    <li>The food! - All the food you can think of, and the best part is that 90% of it is on a stick!</li>
+                    <li>The rides! - Whether you are old or young you can find the ride for you. Your kids will love you for it!</li>
+                    <li>The animals - Greenville will give you an experience you will never forget with animals you may only be able to see at the zoo.</li>
+                    <li>The entertainment - You might even be surprised to see your next door neighbor's kids performing at your local fair.</li>
+                    <li>The education - You can learn a lot about your local town's history by just attending the fair.</li>
+                    <li>The art - Submit your own art, or view the art of others from around the community. This is a great place to see hidden talents revealed. </li>
+                    <li>The competitions - Local competitions give you the chance to stand toe to toe against or shoulder to shoulder with your neighbors to compete for those cool blue ribbons.</li>
+                </ul>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <section class="contact">
+            Contact information placeholder 999.999.9999 <br>123 Main St.
+            <br>Franklin, US 99999
+            <br>Google Map
+            <br>Weather and town data provided from and Thanks to <a href="https://openweathermap.org/">OpenWeather</a>.
+        </section>
+        <section class="footer-bar">&copy;2018 | All Rights Reserved | Weather Wherever |
+            <span id="currentDate"> 
+            </span>
+        </section>
+    </footer>
+    <script src="js/currentdate.js" type="text/javascript"></script>
+    <script src="js/weather-greenville.js" type="text/javascript"></script>
+    <script src="js/towndata-greenville.js" type="text/javascript"></script>
+
+</body>
+
+</html>

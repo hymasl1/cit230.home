@@ -1,0 +1,141 @@
+@media only screen and (min-width: 37.5em) {
+
+    body {
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+
+    header {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+    header img {
+        display: flex;
+        justify-content: flex-end;
+        align-content: flex-start;
+        height: 144px;
+    }
+
+    section.forecast {
+        display: inline-flex;
+        flex-flow: column;
+        width: 96%;
+        font-size: 20px;
+        margin-bottom: 35px;
+    }
+
+    #article-title {
+        display: inline-flex;
+        font-size: 40px;
+        text-decoration: overline underline;
+    }
+
+
+
+    .weather-summary img {
+        width: 100%;
+    }
+
+    .summary-content {
+        align-content: flex-end;
+    }
+
+    #summary-title {
+        width: 100%;
+    }
+
+    main article img {
+        width: 50%;
+        float: right;
+        margin: 7px;
+        box-shadow: 3px 3px 3px #bbbbbb;
+        border-radius: 10px;
+    }
+
+    main article p {
+        font-size: 20px;
+    }
+
+
+    table,
+    th,
+    td {
+        text-align: center;
+        align-content: center;
+        border: 1px solid #666;
+        border-collapse: collapse;
+    }
+
+    table {
+        border-top: 10px solid #666;
+        width: 100%;
+        display: inline-table
+    }
+
+    footer {
+        border-top: 5px solid #666;
+        width: 100%;
+        display: inline-block;
+        border-bottom: 5px solid #666;
+        font-size: 20px;
+    }
+
+    /*Class Selectors*/
+    .gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .weather-summary {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 35px;
+    }
+
+    .town-heading,
+    .town-motto {
+        width: 100%;
+        margin: 0;
+    }
+
+    .town-heading {
+        font-size: 30px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-decoration: underline;
+    }
+
+    .town-info-heading {
+        margin-top: 50px;
+    }
+
+    .town-motto {
+        margin-bottom: 30px;
+    }
+
+    .right {
+        width: 45%;
+    }
+
+    .left {
+        margin-bottom: 40px;
+        width: 50%;
+    }
+    .left img {
+        box-shadow: 5px 5px 5px;
+        border-radius: 10px;
+    }
+
+    form label.top input,
+    form label.top select {
+        width: 50%;
+    }
+    form label.top textarea{
+        width: 83%;
+    }
+    form{
+        width: 800px;
+    }
+}

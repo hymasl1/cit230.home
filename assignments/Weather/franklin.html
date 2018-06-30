@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Franklin City - Weather Wherever</title>
+    <meta name="Description" content="Franklin City Weather Wherever. For data on Franklin City, as well as the local weather!">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+</head>
+
+<body>
+
+    <header class="header">
+        <img src="images/logo.png" alt="Designed by Freepik from www.flaticon.com">
+        <h1>Weather Wherever You Are</h1>
+    </header>
+
+    <nav>
+        <button onclick="toggleHam()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="franklin.html">Franklin</a></li>
+            <li><a href="greenville.html">Greenville</a></li>
+            <li><a href="springfield.html">Springfield</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Weather Wherever</h2>
+        <img src="images/franklin-scape.jpg" alt="Sunny Day-Green Field" class="under-nav">
+
+        <section class="weather-summary">
+            <h2 class="town-heading" id="city-name-f"></h2>
+            <h3 class="town-motto" id="town-motto-f"></h3>
+            <div class="left">
+                <img src="images/franklin.jpeg" alt="two houses next to pond">
+                <h3 class="town-info-heading">Fun Facts</h3>
+                <ul class="town-info">
+                    <li>Year Founded:<span id="town-year-f"></span></li>
+                    <li>Current Population: <span id="town-pop-f">0000</span></li>
+                    <li>Average Rainfall: <span id="town-rain-f">0000</span></li>
+                </ul>
+            </div>
+            <div class="right">
+                <h3 class="town-events-heading">Events</h3>
+                <ul class="town-info">
+                    <li id="town-events-f"></li>
+                    <li id="town-events-f1"></li>
+                    <li id="town-events-f2"></li>
+                </ul>
+                <h3 class="town-weather-heading">Current Weather information</h3>
+                <img src="images/placeholder.png" alt="Current Weather" id="weather_icon"><span id="weather-description"></span>
+                <p>Current Temperature: <span id=currentTemp></span>&deg;F</p>
+                <p>High: <span id="high"></span>&deg;F</p>
+                <p>Low: <span id="low"></span>&deg;F</p>
+                <p>Wind Speed: <span id="wind"></span> mph NE</p>
+                <p>Wind Chill: <span id="chillFrank"></span>&deg;F</p>
+            </div>
+        </section>
+        <section class="forecast">
+            <h3>Ten Day Forecast</h3>
+            <table id="forecast-table">
+                <thead>
+                    <tr>
+                        <th scope="col">Day 1</th>
+                        <th scope="col">Day 2</th>
+                        <th scope="col">Day 3</th>
+                        <th scope="col">Day 4</th>
+                        <th scope="col">Day 5</th>
+                        <th scope="col">Day 6</th>
+                        <th scope="col">Day 7</th>
+                        <th scope="col">Day 8</th>
+                        <th scope="col">Day 9</th>
+                        <th scope="col">Day 10</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>89&deg;F</td>
+                        <td>87&deg;F</td>
+                        <td>78&deg;F</td>
+                        <td>75&deg;F</td>
+                        <td>72&deg;F</td>
+                        <td>72&deg;F</td>
+                        <td>79&deg;F</td>
+                        <td>83&deg;F</td>
+                        <td>85&deg;F</td>
+                        <td>89&deg;F</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section id="article-section">
+            <article class="article">
+                <h3 id="article-title">Franklin Breaks Record</h3>
+                <img src="images/franklin-article.jpeg" alt="Street view of person walking" class="article-pic">
+                <p class="town-article">
+                    This is a beautiful section of writing sent in to explain just how the people of Franklin feel about the town that they live in.
+                    "Small towns are a microcosm of the human experience, but with more intensity. You live shoulder to shoulder with your oldest friends, and your fiercest enemies. You daily encounter the person who cheated you; who stood you up; who broke your heart; and the people who know your complete history: every bad decision, every embarrassment, every moment of kindness (if any). In cities, there can be the relief of some anonymity, but not in a small town. Living in a small town is a psychologically raw way to live. But small town life also requires a deep connection to community that city people may not acquire. It generally means that you go to church because that is what is expected, and how decent people behave. It means you are surrounded by people who know you. In the city it’s called networking. In a small town, the network is your neighbors, and you are expected to participate. Your neighbors are the ones who gather around you to celebrate births and mourn deaths. They plow your driveway when you have the flu. They raise money to help in a tragedy. They put an arm around your shoulder. They make casseroles. And you, in turn, celebrate, and mourn, and plow, and comfort, and bake. This sharing and mutual support is as old as human beings. And it is good." Credit: <a href="http://wuwm.com/post/essay-praise-small-towns#stream/0">J.F. Riordan - "In Praise of Small Towns"</a>
+                </p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <section class="contact">
+            Contact information placeholder 999.999.9999 <br>123 Main St.
+            <br>Franklin, US 99999
+            <br>Google Map
+            <br>Weather and town data provided from and Thanks to <a href="https://openweathermap.org/">OpenWeather</a>.
+        </section>
+        <section class="footer-bar">&copy;2018 | All Rights Reserved | Weather Wherever |
+            <span id="currentDate"> 
+            </span>
+        </section>
+    </footer>
+    <script src="js/currentdate.js" type="text/javascript"></script>
+    <script src="js/weather-franklin.js" type="text/javascript"></script>
+    <script src="js/towndata-franklin.js" type="text/javascript"></script>
+
+</body>
+
+</html>

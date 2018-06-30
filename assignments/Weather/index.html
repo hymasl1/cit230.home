@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Home - Weather Wherever</title>
+    <meta name="description" content="Home page containing statistical data for all 3 towns.">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <img src="images/logo.png" alt="Designed by Freepik from www.flaticon.com">
+        <h1>Weather Wherever You Are</h1>
+    </header>
+
+    <nav>
+        <button onclick="toggleHam()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="franklin.html">Franklin</a></li>
+            <li><a href="greenville.html">Greenville</a></li>
+            <li><a href="springfield.html">Springfield</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <div id="index-heading">
+        <h2>Make Your Way Around Any of These Towns Right Here</h2>
+    </div>
+    <main class="index-large">
+        <section class="weather-summary">
+            <h2 class="town-heading" id="townf-name"></h2>
+            <h3 class="town-motto" id="townf-motto"></h3>
+            <div class="left">
+                <img class="town-image" src="images/franklin.jpeg" alt="clouds-sunny">
+            </div>
+            <div class="right">
+                <h3 class="town-weather-heading">Fun Facts to Know</h3>
+                <strong>Year Founded: </strong><span id="townf-founded"></span>
+                <br>
+                <strong>Current Population: </strong><span id="townf-population"></span>
+                <br>
+                <strong>Rainfall: </strong><span id="townf-rainfall"></span>
+                <br>
+                <h3 class="town-events-heading">Events You Don't Want to Miss</h3>
+                <ul class="events">
+                    <li><strong id="eventf1"></strong></li>
+                    <li><strong id="eventf2"></strong></li>
+                    <li><strong id="eventf3"></strong></li>
+                </ul>
+                <p><a href="franklin.html">More Info...</a></p>
+            </div>
+        </section>
+        <section class="weather-summary">
+            <h2 class="town-heading" id="towng-name"></h2>
+            <h3 class="town-motto" id="towng-motto"></h3>
+            <div class="left">
+                <img class="town-image" src="images/greenville.jpeg" alt="clouds-sunny">
+            </div>
+            <div class="right">
+                <h3 class="town-weather-heading">Fun Facts to Know</h3>
+                <strong>Year Founded: </strong><span id="towng-founded"></span>
+                <br>
+                <strong>Current Population: </strong><span id="towng-population"></span>
+                <br>
+                <strong>Rainfall: </strong><span id="towng-rainfall"></span>
+                <br>
+                <h3 class="town-events-heading">Events You Don't Want to Miss</h3>
+                <ul class="events">
+                    <li><strong id="eventg1"></strong></li>
+                    <li><strong id="eventg2"></strong></li>
+                    <li><strong id="eventg3"></strong></li>
+                </ul>
+                <p><a href="greenville.html">More Info...</a></p>
+            </div>
+        </section>
+        <section class="weather-summary">
+            <h2 class="town-heading" id="towns-name"></h2>
+            <h3 class="town-motto" id="towns-motto"></h3>
+            <div class="left">
+                <img class="town-image" src="images/springfield.jpeg" alt="clouds-sunny">
+            </div>
+            <div class="right">
+                <h3 class="town-weather-heading">Fun Facts to Know</h3>
+                <strong>Year Founded: </strong><span id="towns-founded"></span>
+                <br>
+                <strong>Current Population: </strong><span id="towns-population"></span>
+                <br>
+                <strong>Rainfall: </strong><span id="towns-rainfall"></span>
+                <br>
+                <h3 class="town-events-heading">Events You Don't Want to Miss</h3>
+                <ul class="events">
+                    <li><strong id="events1"></strong></li>
+                    <li><strong id="events2"></strong></li>
+                    <li><strong id="events3"></strong></li>
+                </ul>
+                <p><a href="springfield.html">More Info...</a></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <section class="contact">
+            Contact information 208-877-4658
+            <br>1452 Main St.
+            <br>Franklin, US 35155
+            <br>Google Map
+            <br>Weather and town data provided from and Thanks to <a href="https://openweathermap.org/">OpenWeather</a>.
+        </section>
+        <section class="footer-bar">&copy;2018 | All Rights Reserved | Weather Wherever |
+            <span id="currentDate"> 
+            </span>
+        </section>
+    </footer>
+    <script src="js/currentdate.js" type="text/javascript"></script>
+    <script src="js/towndata.js" type="text/javascript"></script>
+</body>
+
+</html>

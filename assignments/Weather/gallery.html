@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Gallery - Weather Wherever</title>
+    <meta name="Description" content="Gallery page conisisting of the most popular photos from around the regions.">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+</head>
+
+<body>
+    <header class="header">
+        <img src="images/logo.png" alt="Designed by Freepik from www.flaticon.com">
+        <h1>Weather Wherever You Are</h1>
+    </header>
+
+        <nav>
+            <button onclick="toggleHam()">&#9776;</button>
+            <ul id="primaryNav" class="hide">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="franklin.html">Franklin</a></li>
+                <li><a href="greenville.html">Greenville</a></li>
+                <li><a href="springfield.html">Springfield</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li class="active"><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <h2>Weather Wherever - Franklin City Gallery</h2>
+            <section class="container">
+                <ul class="gallery">
+                    <li><img src="images/bench.jpg" alt="Bench on walkway">
+                        <p class="description">A friendly neighboorhood member of franklin was walking down this pathway and couldn't help but take a picture of this sight.</p>
+                    </li>
+                    <li><img src="images/lake.jpeg" alt="Large tree next to lake">
+                        <p class="description">After a wonderful picnic at the park this family captured their favorite view of the pond in Franklin's favorite park.</p>
+                    </li>
+                    <li><img src="images/green.jpg" alt="Green field with cloud break">
+                        <p class="description">Out for an early morning jog in Greenville. This picture was taken next to the highway coming into town. Greenville all wrapped up in one picture.</p>
+                    </li>
+                    <li><img src="images/bench_in_park.jpeg" alt="Bench in park">
+                        <p class="description">The Springfield park is the place to be on a beautiful fall afternoon. With golden and orange leaves all around, this is a sight that you won't soon be forgetting.</p>
+                    </li>
+                    <li><img src="images/lightning.jpg" alt="Lightning">
+                        <p class="description">Greenville has the beautiful landscape. It also has some of the most memorable storms. Check out this picture submitted to us of the lightning storm last spring.</p>
+                    </li>
+                    <li><img src="images/rainbow.jpg" alt="Rainbow with large field">
+                        <p class="description">Springfield does not have the most farm land that you will see, but once you catch a glimpse of a rainbow on the way into town you will never see it the same again.</p>
+                    </li>
+                </ul>
+            </section>
+
+        </main>
+    </div>
+    <footer>
+        <section class="contact">
+            Contact information placeholder 999.999.9999 <br>123 Main St.
+            <br>Franklin, US 99999
+            <br>Google Map
+            <br>Weather and town data provided from and Thanks to <a href="https://openweathermap.org/">OpenWeather</a>.
+        </section>
+        <section class="footer-bar">&copy;2018 | All Rights Reserved | Weather Wherever |
+            <span id="currentDate"> 
+            </span>
+        </section>
+    </footer>
+    <script src="js/currentdate.js"></script>
+
+</body>
+
+</html>

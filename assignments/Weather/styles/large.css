@@ -67,9 +67,14 @@
     .gallery {
         grid-template-columns: 1fr 1fr 1fr;
     }
-    .gallery li:hover:not(.active) {
-        box-shadow: 5px 5px 5px 5px grey;
+    
+    .gallery li{
+        border: 2px solid;
         border-radius: 10px;
+    }
+    
+    .gallery li:hover:not(.active) {
+        box-shadow: 3px 3px 3px grey;
     }
 
     .index-large {
@@ -77,7 +82,7 @@
         grid-template-columns: 1fr 1fr 1fr;
     }
 
-    .index-heading {
+    #index-heading {
         margin-bottom: 15px;
     }
 
@@ -87,6 +92,7 @@
         margin: 0;
         margin-left: 5px;
         justify-content: flex-start;
+        margin-bottom: 20px;
     }
 
     .index-large .left {
