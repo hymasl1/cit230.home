@@ -3,7 +3,6 @@ html{
 }
 header {
     display: flex;
-    font-size: 32px;
     justify-content: center;
     align-content: center;
 }
@@ -41,7 +40,7 @@ footer {
 }
 
 a {
-   color: #5FA85F;  
+   color: #305A30;  
 }
 
 a:hover{
