@@ -16,7 +16,7 @@ weatherRequest.onload = function () {
     var chill = 35.74 + (0.6215 * avrg) - (35.75 * Math.pow(wind, 0.16)) + (0.4275 * avrg * (Math.pow(wind, 0.16)));
 
     document.getElementById("chillFrank").innerHTML = Math.round(chill);
-    
+
     var currentDescription = document.getElementById('weather-description').innerHTML = weatherInfo.weather[0].description;
     var iconcode = weatherInfo.weather[0].icon;
     var icon_path = "http://openweathermap.org/img/w/" + iconcode + ".png";

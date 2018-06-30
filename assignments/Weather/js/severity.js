@@ -1,4 +1,4 @@
- function severity(level){
-    
-    document.getElementById("stormlevel").innerHTML = level;
-}
+ function severity(level) {
+
+     document.getElementById("stormlevel").innerHTML = level;
+ }

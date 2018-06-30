@@ -67,12 +67,12 @@
     .gallery {
         grid-template-columns: 1fr 1fr 1fr;
     }
-    
-    .gallery li{
+
+    .gallery li {
         border: 2px solid;
         border-radius: 10px;
     }
-    
+
     .gallery li:hover:not(.active) {
         box-shadow: 3px 3px 3px grey;
     }

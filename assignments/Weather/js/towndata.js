@@ -15,7 +15,7 @@
      document.getElementById('eventf1').innerHTML = townInfo.towns[0].events[0];
      document.getElementById('eventf2').innerHTML = townInfo.towns[0].events[1];
      document.getElementById('eventf3').innerHTML = townInfo.towns[0].events[2];
-     
+
 
      /*------Greenville Town Info------*/
      document.getElementById('towng-name').innerHTML = townInfo.towns[1].name;
@@ -26,7 +26,7 @@
      document.getElementById('eventg1').innerHTML = townInfo.towns[1].events[0];
      document.getElementById('eventg2').innerHTML = townInfo.towns[1].events[1];
      document.getElementById('eventg3').innerHTML = townInfo.towns[1].events[2];
-     
+
      /*------Springfield Town Info------*/
      document.getElementById('towns-name').innerHTML = townInfo.towns[3].name;
      document.getElementById('towns-motto').innerHTML = townInfo.towns[3].motto;

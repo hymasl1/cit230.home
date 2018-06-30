@@ -133,10 +133,10 @@
     form label.top select {
         width: 50%;
     }
-    form label.top textarea{
+    form label.top textarea {
         width: 83%;
     }
-    form{
+    form {
         width: 800px;
     }
 }

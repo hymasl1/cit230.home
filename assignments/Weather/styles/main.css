@@ -1,6 +1,7 @@
-html{
-    background-color:#DFEEDF;
+html {
+    background-color: #DFEEDF;
 }
+
 header {
     display: flex;
     justify-content: center;
@@ -40,10 +41,10 @@ footer {
 }
 
 a {
-   color: #305A30;  
+    color: #305A30;
 }
 
-a:hover{
+a:hover {
     color: white;
 }
 
@@ -84,12 +85,12 @@ nav ul li a {
     justify-content: center;
 }
 
-nav ul li.active a{
-    background-color:#90C790;
+nav ul li.active a {
+    background-color: #90C790;
     width: 100%;
 }
 
-nav ul li a:hover{
+nav ul li a:hover {
     background-color: lightgreen;
     color: white;
     width: 100%;
@@ -272,7 +273,6 @@ form label.top input:required:valid {
     font-size: 20px;
 }
 
-.events{
+.events {
     text-align: left;
 }
-
