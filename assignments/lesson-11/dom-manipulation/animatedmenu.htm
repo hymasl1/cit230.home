@@ -1,30 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Animated Menu</title>
-	<link rel="stylesheet" href="css/animatedMenu.css">
-	<script src="//code.jquery.com/jquery-2.2.1.min.js"></script>
-	<script>
-	$(function(){
-		$('.navigation > li').hover(function(){
-            // Executes when the mouse hovers over an element
-           $(this).addClass('openSesame'); 
-        }, function(){
-            // This code Executes when the mouse leaves and element
-           $(this).removeClass('openSesame'); 
-        });
 
-	})
-	</script>
+<head>
+    <meta charset="UTF-8">
+    <title>Animated Menu</title>
+    <link rel="stylesheet" href="css/animatedMenu.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script>
+        $(function() {
+            $('.navigation > li').hover(function() {
+                // Executes when the mouse hovers over an element
+                $(this).addClass('openSesame');
+            }, function() {
+                // This code Executes when the mouse leaves and element
+                $(this).removeClass('openSesame');
+            });
+
+        })
+
+    </script>
 </head>
+
 <body>
-	<ul class="navigation">
-		<li>About Us</li>
-		<li class="openSesame">Services</li>
-		<li>Catalog</li>
-		<li>Blog</li>
-		<li>Contact</li>
-	</ul>
+    <ul class="navigation">
+        <li>About Us</li>
+        <li class="openSesame">Services</li>
+        <li>Catalog</li>
+        <li>Blog</li>
+        <li>Contact</li>
+    </ul>
 </body>
+
 </html>
