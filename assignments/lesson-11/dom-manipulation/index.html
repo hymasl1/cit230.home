@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -23,11 +24,9 @@
                     inputFields.css('background-color', 'rgb(255, 0, 0)');
                 }
             }
+            $('#toggleBackgroundBtn').click(toggleStyle);
 
             /**** Inserting Content ****/
-            //Append and Prepend
-            //            $('.coreValues').append("<li><strong>This is brand new!!</strong></li>");
-            //            $("<li><strong>This is great too!!</strong></li>").appendTo(".coreValues");
             $('.coreValues').prepend("<li><strong>This is brand new!!</strong></li>");
             $("<li><strong>This is great too!!</strong></li>").prependTo(".coreValues");
 
@@ -88,7 +87,7 @@
 
                     <div class="FormFieldHolder">
                         <div class="labelHolder"></div>
-                        <div class="FieldHolder"><button type="button" id="ReqAQuoteBtn" data-code="028">Request A Quote !</button></div>
+                        <div class="FieldHolder"><button type="button" id="ReqAQuoteBtn" data-code="028">Request A Quote !</button><button type="button" id="toggleBackgroundBtn" style="margin-left: 60px;">Toggle Box</button></div>
                     </div>
                 </form>
             </div>
