@@ -1,29 +1,51 @@
+/*This is the regular page content. */
 body {
-  background: lightgrey;
+    margin-top: 50px;
 }
 
-#logo {
-  height: 100px;
-  vertical-align: middle;
+
+
+
+
+
+
+
+
+
+
+
+/*This is where all of the id selectors for index.html are held */
+#logo{
+    height: 100px;
 }
 
-ul {
-  display: inline;
-  list-style: none;
+/*This is where all of the class selectors for index.html are held */
+.nav {
+    display: flex;
+    justify-content: center;
 }
 
-li {
-  display: inline;
-  cursor: pointer;
-  border: 1px solid black;
-  padding: 20px;
-  margin-left: -5px;
+.container {
+    display: inline-flex;
+    border: 
 }
 
-a {
-  text-decoration: none;
+.nav-right,
+.reg-nav {
+    display: flex;
+    list-style: none;
+    border: solid;
 }
 
-li:hover {
-  background: #fff;
+.reg-nav li,
+.nav-right li{
+    margin: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.reg-nav li:hover {
+    background-color: mediumpurple;
 }
