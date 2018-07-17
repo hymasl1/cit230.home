@@ -1,0 +1,7 @@
+.active {
+    box-shadow: 5px 5px 5px #C4A1C2;
+}
+
+.navbar-nav li:hover {
+    background-color: lightgray;
+}
