@@ -1,0 +1,31 @@
+/* Medium */
+@media screen and (min-width: 40em) {
+    
+    /*This is the regular page content. */
+    body {
+        max-width: 900px;
+    }
+    
+    
+    
+    
+    /*This is where all of the id selectors for index.html are held */
+    #logo {
+        width:250px;
+    }
+    
+     /*This is where all of the class selectors for index.html are held */
+    .reg-nav {
+        display: inline-flex;
+        width: 100%;
+        margin-top: 5px;
+    }
+    
+    .reg-nav li{
+        padding-top: 15px;
+        width: 100%;
+        font-size: 20px;
+    }
+    
+    
+}

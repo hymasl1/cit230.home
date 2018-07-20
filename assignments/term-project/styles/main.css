@@ -1,15 +1,52 @@
-<<<<<<< HEAD
-.active {
-    box-shadow: 5px 5px 5px #C4A1C2;
-}
+    /*Type of Fonts
+*font-family: 'Indie Flower', cursive;
+*font-family: 'Shadows Into Light', cursive;
+*font-family: 'Chonburi', cursive;
+*font-family: 'Dancing Script', cursive;
+*font-family: 'Cormorant Unicase', serif;
+*font-family: 'Gloria Hallelujah', cursive;
+**/
 
-.navbar-nav li:hover {
-    background-color: lightgray;
-=======
-/*This is the regular page content. */
-body {
-    margin-top: 50px;
-}
+    /*This is the regular page content. */
+
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    html {
+        background-color: #C9C9C9;
+    }
+
+    body {
+        display: flex;
+        flex-flow: column;
+        margin: auto;
+        align-items: center;
+        max-width: 90%;
+    }
+
+
+    h1 {
+        font: bold 40px 'Indie Flower', cursive;
+        margin-bottom: -15px;
+    }
+
+    h2 {
+        font: bold 30px 'Indie Flower', cursive;
+    }
+
+    a {
+        text-decoration: none;
+        color: rgba(204, 170, 255, 255);
+    }
+
+    footer {
+        font-size: 14px;
+        padding: 10px;
+        border-top: 2px solid;
+        margin: 10px 0px 0px 0px;
+    }
 
 
 
@@ -17,44 +54,70 @@ body {
 
 
 
+    /*This is where all of the id selectors for index.html are held */
 
+    #content {
+        display: flex;
+        flex-flow: column;
+        margin: 20px auto;
+        margin-top: 50px;
+        box-shadow: 5px 5px 5px 5px;
+        background-color: #333333;
+        text-align: center;
+    }
 
+    #logo {
+        display: flex;
+        /*        height: 60px;*/
+        box-shadow: 5px 5px 5px;
+    }
 
+    /*This is where all of the class selectors for index.html are held */
 
+    .nav {
+        font-family: 'Indie Flower', cursive;
+    }
 
-/*This is where all of the id selectors for index.html are held */
-#logo{
-    height: 100px;
-}
+    .container {
+        display: flex;
+        border: solid;
+        background-color: #212121;
+    }
 
-/*This is where all of the class selectors for index.html are held */
-.nav {
-    display: flex;
-    justify-content: center;
-}
+    .reg-nav {
+        display: none;
+        list-style: none;
+    }
 
-.container {
-    display: inline-flex;
-    border: 
-}
+    .reg-nav li {
+        font-size: 20px;
+        border: 1px solid gray;
+    }
 
-.nav-right,
-.reg-nav {
-    display: flex;
-    list-style: none;
-    border: solid;
-}
+    .reg-nav li:hover {
+        background-color: darkslategray;
+        color: antiquewhite;
+        font-weight: bold;
+    }
 
-.reg-nav li,
-.nav-right li{
-    margin: auto;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
+    .article-content img {
+        display: inline-flex;
+        flex-flow: column;
+        max-width: 400px;
+        width: 100%;
+        align-content: center;
+        margin: 10px;
+        border-radius: 10px;
+    }
 
-.reg-nav li:hover {
-    background-color: mediumpurple;
->>>>>>> 9434066618d69bfece38f779e410598960181d44
-}
+    .article-content img:last-child {
+        margin-bottom: 25px;
+    }
+
+    .article-content img:hover {
+        box-shadow: 5px 5px 5px 5px;
+    }
+
+    .active a {
+        color: antiquewhite;
+    }
