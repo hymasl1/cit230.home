@@ -31,7 +31,3 @@
     var n = weekday[day] + " " + dom + ", " + monthday[month] + " " + year;
 
     document.getElementById("currentDate").innerHTML = n;
-
-    function toggleHam() {
-        document.getElementById("primaryNav").classList.toggle("hide");
-    }

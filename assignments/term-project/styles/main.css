@@ -15,7 +15,7 @@
     }
 
     html {
-        background-color: #C9C9C9;
+        background-color: #1b3c59;
     }
 
     body {
@@ -38,11 +38,12 @@
 
     a {
         text-decoration: none;
-        color: rgba(204, 170, 255, 255);
+        font-weight: bold;
+        color: #092a35;
     }
 
     footer {
-        font-size: 14px;
+        font-size: 16px;
         padding: 10px;
         border-top: 2px solid;
         margin: 10px 0px 0px 0px;
@@ -56,21 +57,54 @@
 
     /*This is where all of the id selectors for index.html are held */
 
+    #more-options {
+        background-color: transparent;
+        border: none;
+        border-left: solid #092a35;
+        width: 100%;
+        text-align: center;
+        padding-top: 10px;
+        font-size: 25px;
+    }
+
+    #more-options:hover {
+        background-color: darkslategray;
+    }
+
     #content {
         display: flex;
         flex-flow: column;
         margin: 20px auto;
-        margin-top: 50px;
-        box-shadow: 5px 5px 5px 5px;
-        background-color: #333333;
         text-align: center;
+        box-shadow: 5px 5px 5px 5px;
+        background-color: #456170;
     }
 
     #logo {
         display: flex;
-        /*        height: 60px;*/
-        box-shadow: 5px 5px 5px;
+        height: 60px;
     }
+
+    #reg-nav {
+        position: absolute;
+        flex-flow: column;
+        width: 90%;
+        margin-top: 60px;
+        background-color: #658525;
+        list-style: none;
+    }
+
+    #reg-nav li {
+        font-size: 20px;
+        border: 2px solid #092a35;
+    }
+
+    #reg-nav li:hover {
+        background-color: darkslategray;
+        color: #092a35;
+        font-weight: bold;
+    }
+
 
     /*This is where all of the class selectors for index.html are held */
 
@@ -80,31 +114,19 @@
 
     .container {
         display: flex;
-        border: solid;
-        background-color: #212121;
+        background-color: #658525;
+        border: solid #092a35;
     }
 
-    .reg-nav {
+    .hide {
         display: none;
-        list-style: none;
-    }
-
-    .reg-nav li {
-        font-size: 20px;
-        border: 1px solid gray;
-    }
-
-    .reg-nav li:hover {
-        background-color: darkslategray;
-        color: antiquewhite;
-        font-weight: bold;
     }
 
     .article-content img {
         display: inline-flex;
         flex-flow: column;
         max-width: 400px;
-        width: 100%;
+        width: 70%;
         align-content: center;
         margin: 10px;
         border-radius: 10px;
@@ -118,6 +140,39 @@
         box-shadow: 5px 5px 5px 5px;
     }
 
+    .article-first {
+        font-size: 25px;
+        margin: 20px;
+    }
+
+    .article-container {
+        display: flex;
+    }
+
+    .article-written {
+        widows: 50%;
+    }
+
     .active a {
         color: antiquewhite;
+    }
+
+    /*Adventure class selectors*/
+
+    .tour1-info {
+        margin: 20px 5px 20px 15px;
+    }
+
+    .tour2-info {
+        margin: 20px 5px 20px 15px;
+    }
+
+    .article-content-adventure {
+        display: flex;
+        border-top: solid;
+        margin: 20px 20px 0px 20px;
+    }
+
+    .article-head-tour {
+        margin-bottom: 10px;
     }

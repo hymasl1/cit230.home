@@ -1,31 +1,59 @@
 /* Medium */
+
 @media screen and (min-width: 40em) {
-    
+
     /*This is the regular page content. */
     body {
-        max-width: 900px;
+        max-width: 100%;
+        margin: 10px;
     }
-    
-    
-    
-    
+
     /*This is where all of the id selectors for index.html are held */
+    
+    #more-options {
+        display: none;
+    }
+
     #logo {
-        width:250px;
+        height: 60px;
     }
-    
-     /*This is where all of the class selectors for index.html are held */
-    .reg-nav {
-        display: inline-flex;
+    #reg-nav {
+        position: static;
+        display: contents;
         width: 100%;
-        margin-top: 5px;
     }
-    
-    .reg-nav li{
+
+    #reg-nav li {
+        display: inline-flex;
+        flex-flow: column;
         padding-top: 15px;
         width: 100%;
-        font-size: 20px;
+        font-size: 18px;
+    }
+
+    #reg-nav .active {
+        border-bottom: none;
+    }
+
+    #reg-nav ul.hide {
+        display: none;
+    }
+
+
+    /*This is where all of the class selectors for index.html are held */
+    
+    .article-first {
+        border-top: solid;
+        margin-top: -5px;
+    }
+
+    .container {
+        border: none;
     }
     
+    .article-content-adventure{
+        font-size: 25px;
+        align-items: center;
+    }
     
 }
