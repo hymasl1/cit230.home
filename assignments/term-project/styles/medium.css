@@ -4,11 +4,14 @@
 
     /*This is the regular page content. */
     body {
-        max-width: 100%;
+        width: 100%;
         margin: 10px;
     }
 
     /*This is where all of the id selectors for index.html are held */
+    #content{
+        max-width: 95%;
+    }
     
     #more-options {
         display: none;
@@ -54,6 +57,7 @@
     .article-content-adventure{
         font-size: 25px;
         align-items: center;
+        flex-flow: row;
     }
     
 }
