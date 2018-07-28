@@ -9,10 +9,10 @@
     }
 
     /*This is where all of the id selectors for index.html are held */
-    #content{
+    #content {
         max-width: 95%;
     }
-    
+
     #more-options {
         display: none;
     }
@@ -44,20 +44,25 @@
 
 
     /*This is where all of the class selectors for index.html are held */
-    
     .article-first {
         border-top: solid;
         margin-top: -5px;
+        margin: 20px;
     }
 
     .container {
         border: none;
     }
-    
-    .article-content-adventure{
+
+    .article-content-adventure {
         font-size: 25px;
         align-items: center;
         flex-flow: row;
     }
-    
+
+    .article-content img {
+        margin: 10px;
+
+    }
+
 }
