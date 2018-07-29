@@ -11,6 +11,7 @@
     /*This is where all of the id selectors for index.html are held */
     #content {
         max-width: 95%;
+        margin: 20px;
     }
 
     #more-options {
@@ -54,15 +55,28 @@
         border: none;
     }
 
+    /*Adventure Tours Class Selectors*/
+    .tour1-info {
+        margin: 20px 5px 20px 15px;
+    }
+
+    .tour2-info {
+        margin: 20px 5px 20px 15px;
+    }
     .article-content-adventure {
         font-size: 25px;
         align-items: center;
         flex-flow: row;
+        margin: 20px 20px 0px 20px;
+
     }
 
     .article-content img {
         margin: 10px;
-
     }
 
+    /*Event class selectors*/
+    .article-content-events img {
+        width: 96%;
+    }
 }

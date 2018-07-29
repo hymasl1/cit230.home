@@ -4,15 +4,37 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Mountain Spoke - Home</title>
+    <title>Mountain Spoke - Sales</title>
     <!-- Motto - "Are you going to listen? -->
-    <meta name="Description" content="Mountain Bikes, Locations, Adventures, Our Products, Repairs, Services, and much much more! All in one convenient location!">
+    <meta name="Description" content="Enjoy our most popular bikes. You will be drooling over each image.">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
     <link href="https://fonts.googleapis.com/css?family=Chonburi|Cormorant+Unicase|Dancing+Script|Gloria+Hallelujah|Indie+Flower|Shadows+Into+Light" rel="stylesheet">
+    <!--  JQuery  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script type="text/javascript">
+        jQuery(document).ready(function($) {
+
+            var bikes = $('.accordion > div > p').hide();
+
+            bikes.show();
+
+            $('.accordion > div > a').click(function() {
+                var $this = $(this);
+                bikes.slideUp();
+                $this.parent().next().slideDown();
+
+                return false;
+            });
+
+        });
+    </script>
 </head>
 
+<!--Include one sales page displaying a minimum of three bicycle models of different makes and provide some basic specifications.-->
+<!--Implement an accordion menu or a horizontal slide experience to display the bicycle sales images and specifications one at a time on the sales page using jQuery.-->
 
 <body>
     <div id="content">
@@ -33,33 +55,35 @@
             </div>
         </nav>
         <main>
-            <section class="section-first">
-                <div class="article-content-sales">
-                    <img src="images/people_biking_trail.jpg" alt="Three People Biking">
-                    <img src="images/night_biking.jpeg" alt="Biking at night">
-                    <img src="images/adventure_awaits.jpg" alt="View from top of hill">
+            <section class="accordion">
+                <div>
+                    <h1><a href="">Bulls Bike</a></h1>
+                    <p>
+                        <img src="images/bike-one.jpeg" alt="Bulls Bike">
+                    </p>
                 </div>
-                <article class="article-first">
-                    <header class="article-head">
-                        <hgroup>
-                            <h1 class="article-title">The Mountain Spoke</h1>
-                            <h2>Are you going to listen?</h2>
-                        </hgroup>
-                    </header>
-                    <div class="article-container">
-                        <p class="article-written">Join our community. You will benefit from the adventures, bikes, events, and relationships that are created in an environment that you will thrive. With the ability to expand your horizons, as well as fulfil your desire to be great, check out our sales page, services, and if there are any questions that you may have. Let us help you, click on "Contact Us" and we will get back to you ASAP.</p>
-                    </div>
-                </article>
+                <div>
+                    <h1><a href="">Fox Bike</a></h1>
+                    <p>
+                        <img src="images/bike-two.jpeg" alt="Fox Bike">
+                    </p>
+                </div>
+                <div>
+                    <h1><a href="">Basso Bike</a></h1>
+                    <p>
+                        <img src="images/lightweight-bike.jpeg" alt="Basso Bike">
+                    </p>
+                </div>
             </section>
-
         </main>
         <footer>
             <p>&copy; Copyright TheMountainSpoke 2018</p>
-            <p>520 S 7th E Suite #235</p>
+            <p>3950 Valley Commons Drive Bozeman, MT</p>
             <p>Email: themountainspoke@speaking.com</p>
             <p>Phone Number: 209-456-8945</p>
         </footer>
     </div>
+    <!--  JQuery  -->
     <script src="js/dropdown.js"></script>
 </body>
 
